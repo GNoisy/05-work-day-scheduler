@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css">
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,15 +28,13 @@
       <p class="lead text-center">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container time-block">
+    <div class="container">
       <!-- Timeblocks go here -->
 
       <!--first row of scheduler-->
-      <div class="row">
-        <div class="col-1">9am</div>
-        <div class="col-10">
-          <input>
-        </div>
+      <div class="row time-block">
+        <div class="col-1 hour">9am</div>
+        <textarea class="col-10"></textarea>
         <div class="col-1">
           <!--save button to save user data input-->
           <button type="button" class="btn btn-info saveBtn"><i class="fas fa-save"></i></button>
@@ -44,11 +42,9 @@
       </div>
 
       <!--second row of scheduler-->
-      <div class="row">
-        <div class="col-1">10am</div>
-        <div class="col-10">
-          <input type="text">
-        </div>
+      <div class="row time-block">
+        <div class="col-1 hour">10am</div>
+        <textarea class="col-10"></textarea>
         <div class="col-1">
           <!--save button to save user data input-->
           <button type="button" class="btn btn-info saveBtn"><i class="fas fa-save"></i></button>
@@ -56,11 +52,9 @@
       </div>
 
       <!--third row of scheduler-->
-      <div class="row">
-        <div class="col-1">11am</div>
-        <div class="col-10">
-          <input type="text">
-        </div>
+      <div class="row time-block">
+        <div class="col-1 hour">11am</div>
+        <textarea class="col-10"></textarea>
         <div class="col-1">
           <!--save button to save user data input-->
           <button type="button" class="btn btn-info saveBtn"><i class="fas fa-save"></i></button>
@@ -68,11 +62,9 @@
       </div>
 
       <!--fourth row of scheduler-->
-      <div class="row">
-        <div class="col-1">12pm</div>
-        <div class="col-10">
-          <input type="text">
-        </div>
+      <div class="row time-block">
+        <div class="col-1 hour">12pm</div>
+        <textarea class="col-10"></textarea>
         <div class="col-1">
           <!--save button to save user data input-->
           <button type="button" class="btn btn-info saveBtn"><i class="fas fa-save"></i></button>
@@ -80,11 +72,9 @@
       </div>
 
       <!--fifth row of scheduler-->
-      <div class="row">
-        <div class="col-1">1pm</div>
-        <div class="col-10">
-          <input type="text">
-        </div>
+      <div class="row time-block">
+        <div class="col-1 hour">1pm</div>
+        <textarea class="col-10"></textarea>
         <div class="col-1">
           <!--save button to save user data input-->
           <button type="button" class="btn btn-info saveBtn"><i class="fas fa-save"></i></button>
@@ -92,11 +82,9 @@
       </div>
 
       <!--sixth row of scheduler-->
-      <div class="row">
-        <div class="col-1">2pm</div>
-        <div class="col-10">
-          <input type="text">
-        </div>
+      <div class="row time-block">
+        <div class="col-1 hour">2pm</div>
+        <textarea class="col-10"></textarea>
         <div class="col-1">
           <!--save button to save user data input-->
           <button type="button" class="btn btn-info saveBtn"><i class="fas fa-save"></i></button>
@@ -104,11 +92,9 @@
       </div>
 
       <!--seventh row of scheduler-->
-      <div class="row">
-        <div class="col-1">3pm</div>
-        <div class="col-10">
-          <input type="text">
-        </div>
+      <div class="row time-block">
+        <div class="col-1 hour">3pm</div>
+        <textarea class="col-10"></textarea>
         <div class="col-1">
           <!--save button to save user data input-->
           <button type="button" class="btn btn-info saveBtn"><i class="fas fa-save"></i></button>
@@ -116,11 +102,9 @@
       </div>
 
       <!--eighth row of scheduler-->
-      <div class="row">
-        <div class="col-1">4pm</div>
-        <div class="col-10">
-          <input type="text">
-        </div>
+      <div class="row time-block">
+        <div class="col-1 hour">4pm</div>
+        <textarea class="col-10"></textarea>
         <div class="col-1">
           <!--save button to save user data input-->
           <button type="button" class="btn btn-info saveBtn"><i class="fas fa-save"></i></button>
@@ -128,11 +112,9 @@
       </div>
 
       <!--ninth row of scheduler-->
-      <div class="row">
-        <div class="col-1">5pm</div>
-        <div class="col-10">
-          <input type="text">
-        </div>
+      <div class="row time-block">
+        <div class="col-1 hour">5pm</div>
+        <textarea class="col-10"></textarea>
         <div class="col-1">
           <!--save button to save user data input-->
           <button type="button" class="btn btn-info saveBtn"><i class="fas fa-save"></i></button>
@@ -141,7 +123,9 @@
 
     </div>
 
+    <script src="assets/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    
   </body>
 </html>
