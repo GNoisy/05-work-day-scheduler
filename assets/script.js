@@ -12,10 +12,12 @@ $(document).ready(function () {
 
     //Sets past, present, future class on each row
     for (var i=0; i<9; i++) {
+        //sets hour to 9
         date.setHours(9 + i,0,0,0);
         var row = document.getElementById(rowNum[i]);
+        //sets the difference between date and hours
         var diff = moment().diff(date, "hours");
-        console.log(diff);
+        // console.log(diff);
         if (diff === 0) {
             $(row).addClass("present");
         } 
