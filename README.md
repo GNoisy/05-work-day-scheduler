@@ -2,7 +2,7 @@
 
 ![screenshot](scheduler-screenshot.png)
 
-This is an application that runs in browser that, based upon input from the user, generates a random password. 
+This is an application that runs in browser that allows the user to input events throughout each hour of the day. These event will be stored so the user can revisit after closing browser.
 
 ## Deployed Link
 
