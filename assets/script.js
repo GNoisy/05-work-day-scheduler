@@ -33,10 +33,20 @@ $(document).ready(function () {
     //When user clicks save button - set item to local storage
 
     //When user refreshes page info needs to be saved - get item from local storage
+    var textArea = ["text-area-nine", "text-area-ten", "text-area-eleven", "text-area-twelve", "text-area-one", "text-area-two","text-area-three", "text-area-four"];
+
+    for (var i=0; i<9; i++) {
+        document.getElementById(textArea[i]).value = localStorage.getItem(textArea[i]);
+    }
 
     
 
 })
+
+function saveButton(id) {
+    var userInput = document.getElementById(id).value;
+    localStorage.setItem(id, userInput);
+}
 
 
 
